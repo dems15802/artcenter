@@ -1,0 +1,187 @@
+@charset 'uft-8';
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+@import url(reset.css);
+@import url(header.css);
+@import url(footer.css);
+@import url(topBtn.css);
+
+.sub__tit{
+    position: relative;
+    height: 350px;
+    /*background: #ccc;*/
+    background: url(../img/topBg/chungmuInfo.jpg) 0 -250px;
+    background-size: cover;
+}
+.sub__tit h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+    font-size:24px;
+    font-weight:bold;
+    color:#fff;
+}
+
+.sub__container{
+    max-width: 1260px;
+    height: auto;
+    margin: 0 auto;
+}
+.sub__container .container__subClass,
+.sub__container main {float: left;}
+
+.sub__container .container__subClass{
+    height: 100%;
+}
+
+.container__subClass .subClass__tit{
+    width:180px;
+    height:180px;
+    text-align: center;
+    font-size: 20px;
+    font-weight:bold;
+    background-color:#222;
+    color:#888;
+}
+.container__subClass .subClass__tit i{
+    font-size:72px;
+    margin:20px 0 10px 0;
+}
+
+.subClass__list li a{
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    transition: all 0.5s;
+    border-bottom:1px solid #555;
+    font-size:16px;
+    font-weight:bold;
+    color:#555;
+}
+.subClass__list li a:hover{
+    color: #eee;
+    background: #555;
+}
+
+main{width:1060px;height:auto;}
+main .main__content{
+    width:1000px;
+    height:auto;
+    margin:0 auto;
+    padding: 10px 0;
+}
+main .main__content h2 {
+    font-size: 40px;
+    text-align: center;
+    margin:40px auto;
+    font-weight:bold;
+}
+
+#facilList{
+    width:100%;
+    height:70px;
+    background-color:#222;
+}
+#facilList>ul{
+    width:90%;
+    height:30px;
+    margin:0 auto;
+    text-align:center;
+    line-height:70px;
+}
+#facilList>ul>li{
+    width:20%;
+    display:inline-block;
+    text-align:center;
+}
+#facilList>ul>li>a{
+    display:block;
+    width:100%;
+    height:30px;
+    line-height:30px;
+    background-color:rgba(255,255,255,0.7);
+    border-radius:5px;
+    color:#222;
+    font-weight:bold;
+}
+#facilList>ul>li>a:hover{
+    background-color:#222;
+    box-shadow:0 0 0 1px white inset;
+    color:white;
+}
+
+#facilConts{
+    margin-top:30px;
+}
+#facilConts>li{
+    position:relative;
+    margin-top:100px;
+}
+#facilConts>li:last-child{
+    margin-bottom:100px;
+}
+#facilConts li h3{
+    position:absolute;
+    top:-25px;
+    left:50%;
+    margin-left:-250px;
+    width:500px;
+    height:50px;
+    text-align:center;
+    background-color:rgba(0,0,0,0.8);
+    line-height:50px;
+    font-size:24px;
+    color:#ccc;
+    transition:all 0.3s;
+}
+.facilConts-explain{
+    position:absolute;
+    top:40px;
+    width:100%;
+    text-align:center;
+    color:#ccc;
+}
+.facilConts-sum{
+    position:absolute;
+    width:100%;
+    background-color:rgba(0,0,0,0.6);
+    left:0;
+    bottom:0;
+    padding:15px;
+    box-sizing:border-box;
+    transition:all 0.3s;
+}
+
+.facilConts-menu li{
+    width:100%;
+    padding-top:10px;
+    color:white;
+}
+
+.facilConts-menu li:nth-child(1){
+    padding-top:0;
+}
+.facilConts-sum .facilConts-menu span{
+    display:inline-block;
+    width:70px;
+    padding:5px;
+    border-radius:5px;
+    text-align:center;
+    background-color:white;
+    color:#222;
+    transition:all 0.3s;
+}
+
+#facilConts>li:hover h3,
+#facilConts>li:hover .facilConts-sum{
+    background-color:rgba(211,46,46,0.9);
+}
+#facilConts>li:hover h3{color:white;}
+#facilConts>li:hover .facilConts-sum .facilConts-menu span{
+    background-color:#222;
+    color:white;
+}
+

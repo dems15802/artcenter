@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>충무아트센터 | 캘린더</title>
+    <link rel="icon" sizes="16x16" type="image.png" href="img/favicon.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/facilInfo.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+    <script src="js/forEachPolyfill.js" defer></script>
+    <script src="js/header.js" defer></script>
+    <script src="js/topBtn.js" defer></script>
+    <script src="js/footerSiteOpen.js" defer></script>
+    <script src="js/ticketingPopup.js" defer></script>
+    <script src="js/calendar.js" defer></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <a href="#main" id="gomain">본문바로가기</a>
+        <header>
+            <div class="header-inner cf">
+                <h1><a href="index.html"><span class="hidden">logo</span><img src="img/logo.png" alt="logo"></a>
+                </h1>
+
+                <div class="mobile">
+                    <a href="javascript:;" class="mobile__openBtn"><i class="fas fa-bars fa-3x"></i></a>
+                    <div class="right_nav">
+                        <ul class="tnb cf">
+                            <li><a href="./login.html">로그인</a></li>
+                            <li><a href="./join.html">회원가입</a></li>
+                            <li><a href="./mypage.html">마이페이지</a></li>
+                        </ul>
+                        <nav class="gnb">
+                            <ul class="cf">
+                                <li class="hover">
+                                    <a href="#"><span>충무아트센터 소개</span></a>
+                                    <ul>
+                                        <li><a href="#">기관 및 재단소개</a></li>
+                                        <li><a href="#">좌석배치도</a></li>
+                                        <li><a href="#">층별안내</a></li>
+                                        <li><a href="#">오시는길</a></li>
+                                        <li><a href="#">편의시설</a></li>
+                                        <li><a href="#">주차시설</a></li>
+                                    </ul>
+                                </li>
+                                <li class="hover">
+                                    <a href="calendar.html"><span>공연·전시·행사</span></a>
+                                    <ul>
+                                        <li><a href="calendar.html">캘린더</a></li>
+                                        <li><a href="perf_info.html">공연정보</a></li>
+                                        <li><a href="exhi_info.html">전시정보</a></li>
+                                        <li><a href="event_info.html">행사정보</a></li>
+                                    </ul>
+                                </li>
+                                <li class="hover">
+                                    <a href="#"><span>뉴스·소식</span></a>
+                                    <ul>
+                                        <li><a href="#">공지사항</a></li>
+                                        <li><a href="#">뉴스/이슈</a></li>
+                                    </ul>
+                                </li>
+                                <li class="hover">
+                                    <a href="rentalGuidance.html"><span>대관안내</span></a>
+                                    <ul>
+                                        <li><a href="rentalGuidance.html">대관절차</a></li>
+                                        <li><a href="rentalPlace.html">대관시설</a></li>
+                                        <li><a href="rentalApply.html">대관신청</a></li>
+                                    </ul>
+                                </li>
+                                <li class="hover">
+                                    <a href="faq.html"><span>고객센터</span></a>
+                                    <ul>
+                                        <li><a href="faq.html">자주하는 질문</a></li>
+                                        <li><a href="inquiry.html">1:1 문의</a></li>
+                                        <li><a href="etiquette.html">관람예절</a></li>
+                                        <li><a href="benefits.html">회원혜택</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <form class="search" action="action_page.php">
+                        <input type="search" name="search" class="t_box" placeholder="검색어를 입력해주세요">
+                        <button type="submit" class="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                    <a href="javascript:;" class="mobile__closeBtn"><i class="fas fa-times fa-3x"></i></a>
+                </div>
+            </div>
+        </header>
+
+        <div class="sub__tit">
+            <h2>충무아트센터<br>소개</h2>
+        </div>
+        <div class="sub__container cf">
+            <aside class="container__subClass">
+                <h3 class="subClass__tit"><i class="fas fa-building"></i></i><br>충무아트센터<br>소개</h3>
+                <nav class="subClass__list">
+                    <ul>
+                        <li><a href="./chungmuInfo.html">기관 및 재단소개</a></li>
+                        <li><a href="./facilInfo.html">좌석배치도</a></li>
+                        <li><a href="./floorInfo.html">층별안내</a></li>
+                        <li><a href="./parkingInfo.html">오시는길</a></li>
+                        <li><a href="./seatInfo.html">편의시설</a></li>
+                        <li><a href="./wayInfo.html">주차시설</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <main id="main">
+                <div class="main__content">
+                   <h2>관내 편의시설</h2>
+                   <div id="facilList">
+                       <ul>
+                           <li><a href="#facilList">서비스 존</a></li>
+                           <li><a href="#sec1">카페 다디오</a></li>
+                           <li><a href="#sec2">루 레스토랑</a></li>
+                           <li><a href="#sec3">놀이방</a></li>
+                       </ul>
+                   </div>
+                   <ul id="facilConts">
+                       <li>
+                            <h3>서비스존 SERVICE ZONE</h3>
+                            <img src="img/chungmuInfo/facilInfo/1000px_reception.jpg" alt="서비스 존">
+                            <p class="facilConts-explain">안내서비스 제공, 주차권판매, 오페라글래스 대여, 물품보관등의 서비스를 제공합니다.</p>
+                            <div class="facilConts-sum" id="sec1">
+                               <ul class="facilConts-menu">
+                                    <li><span>위치</span> 충무아트센터 1층 로비</li>
+                                    <li><span>운영시간</span> 월-금 09:30-18:30 (점심시간: 12:00-13:00)주말 및 공휴일 휴무</li>
+                                    <li><span>문의번호</span> 02-2230-6600</li>
+                               </p> 
+                            </div> 
+                       </li>
+                       <li id="facilCafe">
+                            <h3>카페 다디오 CAFE DADIO</h3>
+                            <img src="img/chungmuInfo/facilInfo/1000px_cafe.jpg" alt="카페 다디오">
+                            <p class="facilConts-explain">질좋은 원두로 내린 커피와 직접 구운 베이커리로 최고의 시간과 안락함을 선물하는 카페 다디오입니다.</p>
+                            <div class="facilConts-sum" id="sec2">
+                               <ul class="facilConts-menu">
+                                    <li><span>위치</span> 충무아트센터 1층 로비</li>
+                                    <li><span>운영시간</span> 월-일 09:00-22:00 [공연일정에 따라 변동 될 수 있습니다.]주말 및 공휴일 휴무</li>
+                                    <li><span>문의번호</span> 02-2234-8401</li>
+                                    <li><span>판매메뉴</span> 커피를 비롯한 음료 전반, 베이커리, 아이스크림</li>
+                               </p> 
+                            </div> 
+                       </li>
+                       <li>
+                            <h3>루 레스토랑 LUU RESTAURANT</h3>
+                            <img src="img/chungmuInfo/facilInfo/1000px_restaurant.jpg" alt="루 레스토랑">
+                            <p class="facilConts-explain">캐쥬얼 이탈리안 다이닝 레스토랑 루 레스토랑입니다. 단체석과 룸으로 구성되어있으며, 포장이 가능합니다.</p>
+                            <div class="facilConts-sum" id="sec3">
+                               <ul class="facilConts-menu">
+                                    <li><span>위치</span> 충무아트센터 1층 로비</li>
+                                    <li><span>운영시간</span> 평일[월-금] 11:00-22:00 [Last order: 21:30], 주말[토-일] 11:00-21:30 [Last order: 21:00]</li>
+                                    <li><span>문의번호</span> 02-2235-8401</li>
+                               </p> 
+                            </div> 
+                       </li>
+                       <li>
+                            <h3>놀이방 PLAYROOM</h3>
+                            <img src="img/chungmuInfo/facilInfo/1000px_toy.jpg" alt="놀이방">
+                            <p class="facilConts-explain">미취학 아동이 있는 공연 관람객, 충무예술아카데미 수강자 및 스포츠센터 이용자들을 위해 운영되고 있습니다.<br>충무아트센터 놀이방은 안전한 시설과 교육 프로그램을 갖춘 어린이 놀이공간입니다.</p>
+                            <div class="facilConts-sum">
+                               <ul class="facilConts-menu">
+                                    <li><span>위치</span> 충무아트센터 지하 1층</li>
+                                    <li><span>운영시간</span> 월-일 09:00-19:00, 공연이 있는 날은 공연시작 30분 전부터 공연 종료시까지 운영됩니다.</li>
+                                    <li><span>문의번호</span> 02-2230-6698</li>
+                                    <li><span>이용대상</span> 회원자녀 37개월-7세(미취학 아동)</li>
+                                    <li><span>이용자격</span> 공연관람권 소지자 자녀, 충무예술아카데미 수강자 자녀, 스포츠센터 회원 자녀에 한함</li>
+                                    <li><span>이용방법</span> 공연관람객 - 당일 공연관람권(좌석기정) 제시, 충무예술아카데미수강자 - 당일 확인증 제시</li>
+                                    <li><span>이용료</span> 무료</li>
+                                    <li><span>운영요원</span> 전문교사 3명(로테이션 근무)</li>
+                                    <li><span>운영내용</span> 활동영역(놀이기구), 지능개발영역(글자,노래,게임 등)의 프로그램 진행</li>
+                                    <li><span>주요시설</span> 어린이용 화장실, 수면실, 세면대, 볼풀장, 미끄럼틀, 완구, TV 등</li>
+                               </p> 
+                            </div>
+                       </li>
+                   </ul>
+                </div>
+            </main>
+            <a href="javascript:;" class="topBtn">TOP</a>
+        </div>
+        <footer>
+            <div class="footerinner">
+                <div class="footerinner__top cf">
+                    <h2><a href="index.html"><img src="img/logo.png" alt="로고"></a></h2>
+                    <div class="top__links">
+                        <div class="links__sns cf">
+                            <a href="https://ko-kr.facebook.com/chungmuartscenter/" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a>
+                            <a href="https://twitter.com/chungmuholic" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+                            <a href="https://www.instagram.com/chungmu2016/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+                            <a href="https://blog.naver.com/cmah_arthall" target="_blank"><i class="xi-naver xi-2x"></i></a>
+                            <a href="https://www.youtube.com/channel/UC4UWAAwSsT4O3hcLjFL8kXQ" target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
+                        </div>
+                        <ul class="links__list cf">
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#">행정정보공개</a></li>
+                            <li><a href="#">이메일수집거부</a></li>
+                            <li><a href="#">개인정보취급방침</a></li>
+                            <li><a href="#">사이트맵</a></li>
+                            <li>
+                                <select name="siteBox" id="siteBox">
+                                    <option value="">관련사이트 바로가기</option>
+                                    <option value="http://www.beautifulmindcharity.org/">뷰티풀마인드</option>
+                                    <option value="http://www.chimff.com/2019/">충무로 뮤지컬 영화제</option>
+                                    <option value="https://www.e-junggulib.or.kr/SJGL/">서울중구 통합 전자도서관</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footerinner__bottom cf">
+                    <div class="bottom__left">
+                        <address>
+                            사업자등록번호 : 201-82-06405 <br>
+                            통신판매번호 : 제2008-서울중구-1218호 <br>
+                            주소 : 서울시 중구 퇴계로 387(흥인동 131)
+                        </address>
+                        <p>COPY &copy; CHUNGMU ARTS CENTER</p>
+                    </div>
+                    <div class="bottom__right">
+                        <a href="tel:02-2230-6600">02.2230.6600</a>
+                        <p>
+                            상담시간 : 월~금 09:30~18:30 <br>
+                            점심시간 : 12:00~13:00 <br>
+                            주말 및 공휴일 휴무
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body></html>

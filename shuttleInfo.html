@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>충무아트센터 | 셔틀버스 이용안내</title>
+    <link rel="icon" sizes="16x16" type="image.png" href="img/favicon.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/shuttleInfo.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+    <script src="js/forEachPolyfill.js" defer></script>
+    <script src="js/header.js" defer></script>
+    <script src="js/topBtn.js" defer></script>
+    <script src="js/footerSiteOpen.js" defer></script>
+    <script src="js/ticketingPopup.js" defer></script>
+    <script src="js/calendar.js" defer></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <a href="#main" id="gomain">본문바로가기</a>
+        <header>
+            <div class="header-inner cf">
+                <h1><a href="index.html"><span class="hidden">logo</span><img src="img/logo.png" alt="logo"></a>
+                </h1>
+
+                <div class="mobile">
+                    <a href="javascript:;" class="mobile__openBtn"><i class="fas fa-bars fa-3x"></i></a>
+                    <div class="right_nav">
+                        <ul class="tnb cf">
+                            <li><a href="./login.html">로그인</a></li>
+                            <li><a href="./join.html">회원가입</a></li>
+                            <li><a href="./mypage.html">마이페이지</a></li>
+                        </ul>
+                        <nav class="gnb">
+                            <ul class="cf">
+                                <li class="hover">
+                                    <a href="#"><span>충무아트센터 소개</span></a>
+                                    <ul>
+                                        <li><a href="#">기관 및 재단소개</a></li>
+                                        <li><a href="#">좌석배치도</a></li>
+                                        <li><a href="#">층별안내</a></li>
+                                        <li><a href="#">오시는길</a></li>
+                                        <li><a href="#">편의시설</a></li>
+                                        <li><a href="#">주차시설</a></li>
+                                    </ul>
+                                </li>
+                                <li class="hover">
+                                    <a href="calendar.html"><span>공연·전시·행사</span></a>
+                                    <ul>
+                                        <li><a href="calendar.html">캘린더</a></li>
+                                        <li><a href="perf_info.html">공연정보</a></li>
+                                        <li><a href="exhi_info.html">전시정보</a></li>
+                                        <li><a href="event_info.html">행사정보</a></li>
+                                    </ul>
+                                </li>
+                                <li class="hover">
+                                    <a href="#"><span>뉴스·소식</span></a>
+                                    <ul>
+                                        <li><a href="#">공지사항</a></li>
+                                        <li><a href="#">뉴스/이슈</a></li>
+                                    </ul>
+                                </li>
+                                <li class="hover">
+                                    <a href="rentalGuidance.html"><span>대관안내</span></a>
+                                    <ul>
+                                        <li><a href="rentalGuidance.html">대관절차</a></li>
+                                        <li><a href="rentalPlace.html">대관시설</a></li>
+                                        <li><a href="rentalApply.html">대관신청</a></li>
+                                    </ul>
+                                </li>
+                                <li class="hover">
+                                    <a href="faq.html"><span>고객센터</span></a>
+                                    <ul>
+                                        <li><a href="faq.html">자주하는 질문</a></li>
+                                        <li><a href="inquiry.html">1:1 문의</a></li>
+                                        <li><a href="etiquette.html">관람예절</a></li>
+                                        <li><a href="benefits.html">회원혜택</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <form class="search" action="action_page.php">
+                        <input type="search" name="search" class="t_box" placeholder="검색어를 입력해주세요">
+                        <button type="submit" class="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                    <a href="javascript:;" class="mobile__closeBtn"><i class="fas fa-times fa-3x"></i></a>
+                </div>
+            </div>
+        </header>
+
+        <div class="sub__tit">
+            <h2>충무아트센터<br>소개</h2>
+        </div>
+        <div class="sub__container cf">
+            <aside class="container__subClass">
+                <h3 class="subClass__tit"><i class="fas fa-building"></i></i><br>충무아트센터<br>소개</h3>
+                <nav class="subClass__list">
+                    <ul>
+                        <li><a href="./chungmuInfo.html">기관 및 재단소개</a></li>
+                        <li><a href="./facilInfo.html">좌석배치도</a></li>
+                        <li><a href="./floorInfo.html">층별안내</a></li>
+                        <li><a href="./parkingInfo.html">오시는길</a></li>
+                        <li><a href="./seatInfo.html">편의시설</a></li>
+                        <li><a href="./wayInfo.html">주차시설</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <main id="main">
+                <div class="main__content">
+                   <h2>충무아트센터<br>오시는 길</h2>
+                   <ul id="wayList">
+                       <li><a href="">오시는 길 안내</a></li>
+                       <li><a href="">주차 안내</a></li>
+                       <li><a href="">셔틀버스 이용 안내</a></li>
+                   </ul>
+                   <div id="shuttleInfo">
+                        <div id="sImg"><img src="img/chungmuInfo/wayInfo/shuttleInfo.jpg" alt=""></div>
+                        <div id="shuttleInfoExp">
+                            <h3>셔틀버스 중구관내에서 4코스로 4대가 운행되고 있습니다.</h3>
+                            <p>월요일부터 토요일까지 운행되며 법정공휴일 및 일요일은 운행하지 않습니다.</p>
+                        </div>
+                        <div id="shuttleInfoList">
+                            <div class="sList01 sLists">
+                                <div>
+                                    <p><span> 1호차 약수역,버티고개역,남산타운아파트 방면</span> 총 소요시간 31분</p>
+                                </div>
+                                <div>
+                                    <span>15</span> 충무아트센터 출발 <i class="fas fa-arrow-circle-right"></i>
+                                    <span>20</span> 수정약국 <i class="fas fa-arrow-circle-right"></i>
+                                    <span>22</span> 현대문고(청소년 게임방) <i class="fas fa-arrow-circle-right"></i>
+                                    <span>24</span> 청소년수련관 건너편 <i class="fas fa-arrow-circle-right"></i>
+                                    <span>25</span> 남산타운 36동 후문 <i class="fas fa-arrow-circle-right"></i>
+                                    <span>26</span> 파리바게트(광성교회) <i class="fas fa-arrow-circle-right"></i>
+                                    <span>27</span> 체육상가 앞 <i class="fas fa-arrow-circle-right"></i>
+                                    <span>28</span> 4동 앞 <i class="fas fa-arrow-circle-right"></i>
+                                    <span>31</span> 버티고개역 3번 출구 <i class="fas fa-arrow-circle-right"></i>
+                                    <span>45</span> 충무아트센터 도착              
+                                </div>
+                            </div>
+                            <div class="sList02 sLists">
+                                <div>
+                                    <p><span>2호차 퇴계로,을지로,광희동,중구청 방면</span> 총 소요시간 37분</p>
+                                </div>
+                                <div>
+                                    <span>15</span> 충무아트센터 출발 <i class="fas fa-arrow-circle-right"></i>
+                                    <span>18</span> 을지로6가 파출소 <i class="fas fa-arrow-circle-right"></i>
+                                    <span>20</span> 중부시장 건너편 <i class="fas fa-arrow-circle-right"></i>
+                                    <span>22</span> 을지로4가 사거리 <i class="fas fa-arrow-circle-right"></i>
+                                    <span>24</span> 중구청 입구 <i class="fas fa-arrow-circle-right"></i>
+                                    <span>27</span> 동국대 후문(녹두사거리) <i class="fas fa-arrow-circle-right"></i>
+                                    <span>28</span> 평화식당 <i class="fas fa-arrow-circle-right"></i>
+                                    <span>29</span> 행복예식장 <i class="fas fa-arrow-circle-right"></i>
+                                    <span>31</span> 쌍림빌딩 <i class="fas fa-arrow-circle-right"></i>
+                                    <span>34</span> 광희문입구 <i class="fas fa-arrow-circle-right"></i>
+                                    <span>35</span> 제일슈퍼 <i class="fas fa-arrow-circle-right"></i>
+                                    <span>36</span> 청구역 어린이놀이터앞 <i class="fas fa-arrow-circle-right"></i>
+                                    <span>37</span> 하이마트 <i class="fas fa-arrow-circle-right"></i>
+                                    <span>45</span> 충무아트센터 도착
+                                </div>
+                            </div>
+                            <div class="sList03 sLists">
+                                <div>
+                                    <p><span>3호차 청구역,삼성아파트,현대아파트,금호아파트 방면 </span>총 소요시간 35분</p>
+                                </div>
+                                <div>
+                                    <span>15</span> 충무아트센터 출발 <i class="fas fa-arrow-circle-right"></i>
+                                    <span>20</span> 청구역 1번 출구 어린이놀이터 앞 <i class="fas fa-arrow-circle-right"></i>
+                                    <span>23</span> 약수하이츠 아파트 정문 <i class="fas fa-arrow-circle-right"></i>
+                                    <span>24</span> 약수하이츠 아파트 111동 <i class="fas fa-arrow-circle-right"></i>
+                                    <span>25</span> 약수하이츠 아파트 114동(후문) <i class="fas fa-arrow-circle-right"></i>
+                                    <span>26</span> 삼성아파트 정문 <i class="fas fa-arrow-circle-right"></i>
+                                    <span>28</span> 삼성아파트 후문 <i class="fas fa-arrow-circle-right"></i>
+                                    <span>30</span> 현대아파트 정문 앞(새마을 금고길 건너) <i class="fas fa-arrow-circle-right"></i>
+                                    <span>31</span> 현대아파트 후문 <i class="fas fa-arrow-circle-right"></i>
+                                    <span>32</span> 금호아파트 입구 <i class="fas fa-arrow-circle-right"></i>
+                                    <span>33</span> 신당초등학교 정문 <i class="fas fa-arrow-circle-right"></i>
+                                    <span>35</span> 황학시장(창성종합주방 앞) <i class="fas fa-arrow-circle-right"></i>
+                                    <span>45</span>충무아트센터 도착
+                                </div>
+                            </div>
+                            <div class="sList04 sLists">
+                                <div>
+                                    <p><span>4호차 장충동,성곽길,대림아파트 방면</span> 총 소요시간 35분</p>
+                                </div>
+                                <div>
+                                    <span>15</span> 충무아트센터 출발 <i class="fas fa-arrow-circle-right"></i>
+                                    <span>20</span> 엠버서더호텔 옆 정자앞 <i class="fas fa-arrow-circle-right"></i>
+                                    <span>23</span> 성곽길 입구 <i class="fas fa-arrow-circle-right"></i>
+                                    <span>24</span> 중현슈퍼 <i class="fas fa-arrow-circle-right"></i>
+                                    <span>25</span> 충현상회 <i class="fas fa-arrow-circle-right"></i>
+                                    <span>26</span> 성곽공영주차장 앞 <i class="fas fa-arrow-circle-right"></i>
+                                    <span>28</span> 버티공영주차장 앞(덕성슈퍼마켓) <i class="fas fa-arrow-circle-right"></i>
+                                    <span>30</span> 송도병원 <i class="fas fa-arrow-circle-right"></i>
+                                    <span>31</span> 약수역기업은행(약수역 6~7번사이) <i class="fas fa-arrow-circle-right"></i>
+                                    <span>32</span> 대림 e-편한세상 아파트 정문 <i class="fas fa-arrow-circle-right"></i>
+                                    <span>33</span> 대림 e-편한세상 아파트 새마을금고 <i class="fas fa-arrow-circle-right"></i>
+                                    <span>45</span>충무아트센터 도착
+                                </div>
+                            </div>
+                        </div>
+                        <div id="shuttleInfoEx">
+                            <p>
+                                <span>셔틀버스 운행시간</span>
+                                <ul>
+                                    <li><span>첫차:</span> 오전 8시 15분</li>
+                                    <li><span>막차:</span> 오후 6시 15분</li>
+                                    <li>
+                                        차량 도착시간은 신호등 정차, 교통상황에 따라 다소 차이가 있을 수 있습니다.
+                                        <br>차량도착 전 반드시 손을 들어 정차표시를 해주시기 바랍니다.
+                                    </li>
+                                    <li>
+                                        셔틀버스는 <a href="https://www.e-junggu.or.kr/fmcs/1" target="_blank">중구시설 관리공단</a>에서 운영하고 있습니다.<br>
+                                        노선 또는 배차와 관련한 상세한 문의는 중구시설관리공단 홈페이지나 스포츠 센터(02-2280-8400~3)로 문의하시면 됩니다. 
+                                    </li>
+                                </ul>
+                            </p>
+                        </div>                       
+                   </div>
+                </div>
+            </main>
+            <a href="javascript:;" class="topBtn">TOP</a>
+        </div>
+        <footer>
+            <div class="footerinner">
+                <div class="footerinner__top cf">
+                    <h2><a href="index.html"><img src="img/logo.png" alt="로고"></a></h2>
+                    <div class="top__links">
+                        <div class="links__sns cf">
+                            <a href="https://ko-kr.facebook.com/chungmuartscenter/" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a>
+                            <a href="https://twitter.com/chungmuholic" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+                            <a href="https://www.instagram.com/chungmu2016/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+                            <a href="https://blog.naver.com/cmah_arthall" target="_blank"><i class="xi-naver xi-2x"></i></a>
+                            <a href="https://www.youtube.com/channel/UC4UWAAwSsT4O3hcLjFL8kXQ" target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
+                        </div>
+                        <ul class="links__list cf">
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#">행정정보공개</a></li>
+                            <li><a href="#">이메일수집거부</a></li>
+                            <li><a href="#">개인정보취급방침</a></li>
+                            <li><a href="#">사이트맵</a></li>
+                            <li>
+                                <select name="siteBox" id="siteBox">
+                                    <option value="">관련사이트 바로가기</option>
+                                    <option value="http://www.beautifulmindcharity.org/">뷰티풀마인드</option>
+                                    <option value="http://www.chimff.com/2019/">충무로 뮤지컬 영화제</option>
+                                    <option value="https://www.e-junggulib.or.kr/SJGL/">서울중구 통합 전자도서관</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footerinner__bottom cf">
+                    <div class="bottom__left">
+                        <address>
+                            사업자등록번호 : 201-82-06405 <br>
+                            통신판매번호 : 제2008-서울중구-1218호 <br>
+                            주소 : 서울시 중구 퇴계로 387(흥인동 131)
+                        </address>
+                        <p>COPY &copy; CHUNGMU ARTS CENTER</p>
+                    </div>
+                    <div class="bottom__right">
+                        <a href="tel:02-2230-6600">02.2230.6600</a>
+                        <p>
+                            상담시간 : 월~금 09:30~18:30 <br>
+                            점심시간 : 12:00~13:00 <br>
+                            주말 및 공휴일 휴무
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body></html>
